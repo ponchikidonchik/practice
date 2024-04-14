@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Haven</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/img.png"
+              width="28"
+              height="28"
+              class="d-inline-block align-text-top"
+            />
+            Мой сайт</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle
+        navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  ><i class="bi-house"></i> Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html"
+                  ><i class="bi-command"></i>Товары</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"
+                  ><i class="bi-person"></i>О нас</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"
+                  ><i class="bi-chat-heart"></i>Отзывы о нас</a
+                >
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Ваш стиль - наша ответственность!</h1>
+      <p>
+        Добро пожаловать!<br />Наш магазин одежды - это место, где каждый клиент
+        найдет идеальное сочетание стиля, качества и удобства. Мы предлагаем
+        широкий ассортимент модной, качественной и стильной одежды. У нас вы
+        найдете как классические модели, так и трендовые новинки
+        сезона.Приходите к нам за яркими и стильными решениями, которые
+        подчеркнут вашу неповторимость и уверенность!
+      </p>
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/внешний вид магазина одежды с название _Style Haven__Kandinsky 3.0 (1).jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Мы рады видеть вас на сайте нашего магазина</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/зал.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>
+                Наш магазин одежды предлагает широкий ассортимент стильной и
+                качественной одежды
+              </h5>
+              <p>
+                Мы постоянно обновляем нашу коллекцию, чтобы предложить вам
+                самые актуальные модели и расцветки
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/Сотрудники.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Наш коллектив - это команда профессионалов</h5>
+              <p>
+                Мы ценим каждого клиента и стараемся создать уютную и
+                дружелюбную атмосферу в магазине.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Товары</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/img.png"
+              width="28"
+              height="28"
+              class="d-inline-block align-text-top"
+            />
+            Мой сайт</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle
+          navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  ><i class="bi-house"></i> Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html"
+                  ><i class="bi-command"></i>Товары</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"
+                  ><i class="bi-person"></i>О нас</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"
+                  ><i class="bi-chat-heart"></i>Отзывы о нас</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+        <h1></h1>
+        <a class="nav-link" href="table.html"
+        ><i class="bi-chat-heart"></i>Таблица товаров</a
+      >
+      <div class="row">
+        <div class="card shadow rounded my-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/img/платье.png" class="product-image" />
+              </div>
+              <div class="col-md-10 d-flex flex-column">
+                <div class="product-name">
+                  Платье праздничное летнее с воланами
+                </div>
+                <div class="product-description">
+                  Тренд 2024 года, который стабильно не выходит из моды - платье
+                  женское с воланами и рюшами. Красивый и удобный наряд,
+                  уместный по любому поводу, - то, что должно быть наготове у
+                  каждой. Струящаяся ткань с перламутровым оттенком добавляет
+                  изящество и шарм этому лёгкому мини образу, который идеален
+                  для выхода в свет, на праздник, любое торжественное событие
+                  или для фотосессии.
+                </div>
+
+                <div class="flex-grow-1"></div>
+                <div class="d-flex justify-content-end">
+                  <div class="product-price">
+                    Цена: <strong>3822 р.</strong>
+                    <button class="btn btn-warning" title="В корзину" onclick="addToCart()">
+                      <i class="bi bi-cart"></i>
+                      <span class="d-none d-md-inline">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow rounded my-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/img/юбка.png" class="product-image" />
+              </div>
+              <div class="col-md-10 d-flex flex-column">
+                <div class="product-name">Юбка жатка макси плиссе широкая</div>
+                <div class="product-description">
+                  Юбка жатка новый тренд 2024 года. Если Вы хотите внести стиль
+                  и элегантность в свой гардероб, то такая юбка жатка отлично
+                  подойдет. Она идеально сочетается с вашими повседневными
+                  нарядами, придавая им нотку праздничности и элегантности.
+                  Обратите внимание, юбка жатка идет в одном стандартном размере
+                  42-50, но имеет две длины 95 см и 100 см. Черная юбка 100 см
+                  без подклада, серая 95 см с подкладом.
+                </div>
+
+                <div class="flex-grow-1"></div>
+                <div class="d-flex justify-content-end">
+                  <div class="product-price">
+                    Цена: <strong>1724 р.</strong>
+                    <button class="btn btn-warning" title="В корзину" onclick="addToCart()">
+                      <i class="bi bi-cart"></i>
+                      <span class="d-none d-md-inline">В корзину </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow rounded my-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/img/топ.png" class="product-image" />
+              </div>
+              <div class="col-md-10 d-flex flex-column">
+                <div class="product-name">Топ вечерний нарядный</div>
+                <div class="product-description">
+                  Тренд 2024! Атласный топ - это одна из самых популярных и
+                  базовая вещей в гардеробе каждой женщины. Он представляет
+                  собой короткую блузку с длинными объемными рукавами и запахом,
+                  который можно носить как спереди, так и на спине. На талии
+                  кроп топ перевязывается завязками в два оборота. Нарядный топ
+                  идеально подходит для летнего сезона, когда хочется немного
+                  освежить свой образ. Для вечерних выходов и особых случаев
+                  можно выбрать яркий наряд, блузка добавит элегантности и шарма
+                  вашему образу.
+                </div>
+
+                <div class="flex-grow-1"></div>
+                <div class="d-flex justify-content-end">
+                  <div class="product-price">
+                    Цена: <strong>1464 р.</strong>
+                    <button class="btn btn-warning" title="В корзину" onclick="addToCart()">
+                      <i class="bi bi-cart"></i>
+                      <span class="d-none d-md-inline">В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
